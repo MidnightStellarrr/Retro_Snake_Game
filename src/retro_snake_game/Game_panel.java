@@ -39,6 +39,8 @@ public class Game_panel extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
 
         jScrollPane1.setViewportView(jEditorPane1);
 
@@ -59,10 +61,10 @@ public class Game_panel extends javax.swing.JFrame {
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 8, Short.MAX_VALUE)
+            .addGap(0, 10, Short.MAX_VALUE)
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(38, 72, 680, -1));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(38, 92, 680, 10));
 
         jPanel3.setBackground(new java.awt.Color(51, 153, 0));
         jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 8));
@@ -78,16 +80,20 @@ public class Game_panel extends javax.swing.JFrame {
             .addGap(0, 404, Short.MAX_VALUE)
         );
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(38, 86, 680, 420));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 680, 420));
 
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hannah\\Documents\\NetBeansProjects\\Retro_Snake_Game\\src\\retro_snake_game\\img\\Title.png")); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 447, 69));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hannah\\Documents\\NetBeansProjects\\Retro_Snake_Game\\src\\retro_snake_game\\img\\0_score_1.png")); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 447, 69));
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 20, 30, -1));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hannah\\Documents\\NetBeansProjects\\Retro_Snake_Game\\src\\retro_snake_game\\img\\0_score_1.png")); // NOI18N
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 20, 30, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hannah\\Documents\\NetBeansProjects\\Retro_Snake_Game\\src\\retro_snake_game\\img\\0num.png")); // NOI18N
+        jLabel5.setText("jLabel5");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 10, 47, -1));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\Hannah\\Documents\\NetBeansProjects\\Retro_Snake_Game\\src\\retro_snake_game\\img\\0num.png")); // NOI18N
+        jLabel7.setText("jLabel5");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 10, 47, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -97,7 +103,7 @@ public class Game_panel extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 534, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 557, Short.MAX_VALUE)
         );
 
         pack();
@@ -134,7 +140,9 @@ public class Game_panel extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
