@@ -1,20 +1,25 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package retro_snake_game;
-
-/**
- *
- * @author Hannah
- */
+//overall toolkit
+import java.awt.*;
+//respond to user input
+import java.awt.event.*;
+import java.util.Random;
+import javax.swing.*;
 public class Game_panel extends javax.swing.JFrame {
+    //SECTION 1: SNAKE BODY
+    int[] snakeX = new int[750];
+    int[] snakeY = new int[750];
+    int lengthOfSnake = 3;
+    
+    //SECTION 2: GRID 
+    //the play area will be field with 22 x 22 pixel cell
+    static final int CELL = 22;
+    //hold every valid grid line position on the board.
+    int[] xPos;
+    int[] yPos;
+    
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Game_panel.class.getName());
-    
-    /**
-     * Creates new form Game_panel
-     */
     public Game_panel() {
         initComponents();
         setTitle("Build by Hannah");
