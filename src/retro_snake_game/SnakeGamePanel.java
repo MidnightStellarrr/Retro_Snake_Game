@@ -11,7 +11,21 @@ public class SnakeGamePanel extends JPanel implements ActionListener, KeyListene
     static final int SCREEN_HEIGHT = 600;
     static final int UNIT_SIZE     = 25;         
     static final int GAME_UNITS    = (SCREEN_WIDTH * SCREEN_HEIGHT) / (UNIT_SIZE * UNIT_SIZE);
-    static final int DELAY         = 100;        
+    static final int DELAY         = 100; 
+    
+    final int[] x = new int[GAME_UNITS];
+    final int[] y = new int[GAME_UNITS];
+    int bodyParts = 3;       
+    int applesEaten = 0;
+    int appleX;
+    int appleY;
+    char direction = 'R';    
+    boolean running = false;
+    Timer timer;
+    Random random;
+    
+    
+    
     
     @Override
     public void actionPerformed(ActionEvent e) {
