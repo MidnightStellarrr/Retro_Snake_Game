@@ -24,27 +24,37 @@ public class SnakeGamePanel extends JPanel implements ActionListener, KeyListene
     Timer timer;
     Random random;
     
-    
-    
-    
+    public SnakeGamePanel() {
+        random = new Random();
+        this.setPreferredSize(new Dimension(SCREEN_WIDTH, SCREEN_HEIGHT));
+        this.setBackground(Color.BLACK);
+        this.setFocusable(true);
+        this.addKeyListener(this);
+        startGame();
+    }
+
+    public void startGame() {
+        running = true;
+        timer = new Timer(DELAY, this);
+        timer.start();
+    }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        draw(g);
+    }
+
+    public void draw(Graphics g) {
+        g.setColor(Color.WHITE);
+        g.drawString("Game starting...", 20, 20);
+    }
+
     @Override
     public void actionPerformed(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
-    @Override
-    public void keyTyped(KeyEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public void keyPressed(KeyEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public void keyReleased(KeyEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
+    @Override public void keyPressed(KeyEvent e) { }
+    @Override public void keyReleased(KeyEvent e) { }
+    @Override public void keyTyped(KeyEvent e) { }
 }
